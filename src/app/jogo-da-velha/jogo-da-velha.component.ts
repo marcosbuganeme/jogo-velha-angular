@@ -44,4 +44,12 @@ export class JogoDaVelhaComponent implements OnInit {
   get showTabuleiro(): boolean {
     return this.jogoDaVelhaService.showTabuleiro
   }
+
+  get jogador(): number {
+    return this.jogoDaVelhaService.jogador
+  }
+
+  novoJogo(): void {
+    this.jogoDaVelhaService.novoJogo();
+  }
 }
